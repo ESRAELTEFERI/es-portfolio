@@ -3,20 +3,49 @@ import { motion as Motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Sheqlee — Freelance-Company Platform",
-    subtitle: "Internship Project — METNEE PLC",
-    desc: "Built responsive UI components and implemented filtering and navigation for a freelancer-company connection platform.",
-    tags: ["React", "JavaScript", "HTML/CSS"],
+    title: "Sheeqle — Freelance & Company Platform",
+    subtitle: "Frontend Developer — METNEE PLC (Internship)",
+    desc: "Built the complete frontend for a multi-role freelance marketplace with responsive layouts, routing, and reusable components.",
+    tags: ["React", "JavaScript", "HTML", "CSS"],
     image: "/src/assets/sheeqlee.png",
-    code: "#",
+    code: "https://github.com/ESRAELTEFERI/sheqlee-main",
+    demo: null,
   },
   {
-    title: "Tigrigna Speech-to-Text AI",
-    subtitle: "Final Year Project — Mekelle Institute of Technology",
-    desc: "Developed a speech-to-text system for Tigrigna using ML and signal processing.",
+    title: "HRMS — Human Resource Management System",
+    subtitle: "Frontend Project (Angular)",
+    desc: "Developed HR admin and payroll modules including dashboards, forms, and role-based workflows.",
+    tags: ["Angular", "TypeScript", "HTML", "CSS"],
+    image: "/src/assets/hrms.jpg",
+    code: null,
+    demo: null,
+  },
+  {
+    title: "Food Delivery Web App",
+    subtitle: "Frontend Project (React)",
+    desc: "Built a responsive food delivery interface with modern UI patterns and component-based architecture.",
+    tags: ["React", "JavaScript", "CSS"],
+    image: "/src/assets/foodDelivery.png",
+    code: "https://github.com/ESRAELTEFERI/FoodDelivery",
+    demo: null,
+  },
+  {
+    title: "Full-Stack Todo Application (TickTock Tasks)",
+    subtitle: "Full-Stack Project (Angular + Node.js)",
+    desc: "Developed a full-stack task management app with REST APIs, CRUD operations, and basic authentication.",
+    tags: ["Angular", "Node.js", "REST API"],
+    image: "/src/assets/TickTock.png",
+    code: "https://github.com/ESRAELTEFERI/TickTock-Tasks",
+    demo: null,
+  },
+  {
+    title: "Tigrigna Speech-to-Text System",
+    subtitle: "Final Year Project — Mekelle University",
+    desc: "Developed a speech-to-text system for the Tigrigna language using machine learning and signal processing techniques.",
     tags: ["Python", "Machine Learning", "AI"],
-    image: "/src/assets/sheeqlee.png",
-    code: "#",
+    image: "/src/assets/stt.png",
+    code: null,
+    demo: null,
   },
 ];
 
@@ -29,6 +58,7 @@ export function Projects() {
       className="container py-8"
     >
       <h2 className="text-2xl font-semibold mb-6">Featured Projects</h2>
+
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((p) => (
           <Motion.div
@@ -43,17 +73,14 @@ export function Projects() {
             }}
             className="bg-card rounded-lg border overflow-hidden"
           >
-            {/* <div className="flex flex-col md:flex-row"> */}
             <div className="flex flex-col">
-              <div className="w-full">
-                <img
-                  src={p.image}
-                  alt={p.title}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
+              <img
+                src={p.image}
+                alt={p.title}
+                className="w-full h-auto object-cover"
+              />
 
-              <div className="p-4 flex-1">
+              <div className="p-4">
                 <div className="text-sm text-muted">{p.subtitle}</div>
                 <h3 className="font-semibold text-lg">{p.title}</h3>
                 <p className="mt-2 text-sm">{p.desc}</p>
@@ -70,12 +97,24 @@ export function Projects() {
                 </div>
 
                 <div className="mt-4 flex gap-2">
-                  <a href="#" className="px-3 py-1 border rounded">
-                    Learn More
-                  </a>
-                  <a href={p.code} className="px-3 py-1 border rounded">
-                    View Code
-                  </a>
+                  {p.demo && (
+                    <a
+                      href={p.demo}
+                      target="_blank"
+                      className="px-3 py-1 border rounded"
+                    >
+                      Live Demo
+                    </a>
+                  )}
+                  {p.code && (
+                    <a
+                      href={p.code}
+                      target="_blank"
+                      className="px-3 py-1 border rounded"
+                    >
+                      View Code
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

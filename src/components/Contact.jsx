@@ -34,7 +34,7 @@ export function Contact() {
               placeholder="Tell me about your project"
             ></textarea>
           </label>
-          <button type="submit" className="px-4 py-2 rounded border">
+          <button type="submit" className="text-white px-4 py-2 rounded border">
             Send Message
           </button>
         </form>

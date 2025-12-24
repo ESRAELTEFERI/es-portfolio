@@ -28,18 +28,27 @@ export function Hero() {
         </h1>
 
         <p className="text-lg mb-4 max-w-xl">
-          Web Developer & AI Enthusiast from Ethiopia. I build modern web apps
-          and intelligent systems that solve real problems.
+          I'm a software engineer from Ethiopia with experience building
+          production-style web applications using React and Angular. I enjoy
+          turning designs into clean, responsive interfaces and building real
+          products that people use. I build modern web apps and intelligent
+          systems that solve real problems.
         </p>
 
         <div className="flex flex-wrap gap-3">
           <a
             href="#projects"
-            className="px-4 py-2 rounded-lg border bg-primary text-primary-foreground"
+            className="text-white px-4 py-2 rounded-lg border bg-primary text-primary-foreground"
           >
             View My Work
           </a>
-          <a href="/cv.pdf" className="px-4 py-2 rounded-lg border">
+          <a
+            href="Esrael_teferi_Resume.pdf"
+            // target="_blank"
+            // rel="noopener noreferrer"
+            download
+            className="px-4 py-2 rounded-lg border"
+          >
             Download CV
           </a>
           <a href="#contact" className="px-4 py-2 rounded-lg border">

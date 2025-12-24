@@ -6,6 +6,7 @@ import { Projects } from "./components/Projects";
 import { Services } from "./components/Services";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { Sun, Moon } from "lucide-react";
 
 export default function App() {
   const [isDark, setIsDark] = useState(() => {
@@ -51,19 +52,28 @@ export default function App() {
             </a>
             <button
               onClick={() => setIsDark((d) => !d)}
-              className="ml-4 px-3 py-1 rounded-lg border"
+              className="text-white ml-4 p-2 rounded-lg border flex items-center justify-center"
               aria-label="Toggle theme"
             >
-              {isDark ? "Light" : "Dark"}
+              {isDark ? (
+                <Sun className="w-5 h-5" />
+              ) : (
+                <Moon className="w-5 h-5" />
+              )}
             </button>
           </nav>
 
           <div className="md:hidden">
             <button
               onClick={() => setIsDark((d) => !d)}
-              className="px-2 py-1 border rounded"
+              className="p-2 rounded-lg border flex items-center justify-center"
+              aria-label="Toggle theme"
             >
-              {isDark ? "Light" : "Dark"}
+              {isDark ? (
+                <Sun className="w-5 h-5" />
+              ) : (
+                <Moon className="w-5 h-5" />
+              )}
             </button>
           </div>
         </div>

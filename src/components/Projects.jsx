@@ -1,6 +1,12 @@
 import React from "react";
 import { motion as Motion } from "framer-motion";
+
+// Import all images
+import sheeqlee from "../assets/sheeqlee.png";
+import hrms from "../assets/hrms.jpg";
 import foodDelivery from "../assets/foodDelivery.png";
+import tickTock from "../assets/TickTock.png";
+import stt from "../assets/stt.png";
 
 const projects = [
   {
@@ -8,7 +14,7 @@ const projects = [
     subtitle: "Frontend Developer — METNEE PLC (Internship)",
     desc: "Built the complete frontend for a multi-role freelance marketplace with responsive layouts, routing, and reusable components.",
     tags: ["React", "JavaScript", "HTML", "CSS"],
-    image: "/src/assets/sheeqlee.png",
+    image: sheeqlee,
     code: "https://github.com/ESRAELTEFERI/sheqlee-main",
     demo: null,
   },
@@ -17,7 +23,7 @@ const projects = [
     subtitle: "Frontend Project (Angular)",
     desc: "Developed HR admin and payroll modules including dashboards, forms, and role-based workflows.",
     tags: ["Angular", "TypeScript", "HTML", "CSS"],
-    image: "/src/assets/hrms.jpg",
+    image: hrms,
     code: null,
     demo: null,
   },
@@ -26,7 +32,7 @@ const projects = [
     subtitle: "Frontend Project (React)",
     desc: "Built a responsive food delivery interface with modern UI patterns and component-based architecture.",
     tags: ["React", "JavaScript", "CSS"],
-    image: { foodDelivery },
+    image: foodDelivery,
     code: "https://github.com/ESRAELTEFERI/FoodDelivery",
     demo: null,
   },
@@ -35,7 +41,7 @@ const projects = [
     subtitle: "Full-Stack Project (Angular + Node.js)",
     desc: "Developed a full-stack task management app with REST APIs, CRUD operations, and basic authentication.",
     tags: ["Angular", "Node.js", "REST API"],
-    image: "/src/assets/TickTock.png",
+    image: tickTock,
     code: "https://github.com/ESRAELTEFERI/TickTock-Tasks",
     demo: null,
   },
@@ -44,7 +50,7 @@ const projects = [
     subtitle: "Final Year Project — Mekelle University",
     desc: "Developed a speech-to-text system for the Tigrigna language using machine learning and signal processing techniques.",
     tags: ["Python", "Machine Learning", "AI"],
-    image: "/src/assets/stt.png",
+    image: stt,
     code: null,
     demo: null,
   },
@@ -102,6 +108,7 @@ export function Projects() {
                     <a
                       href={p.demo}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="px-3 py-1 border rounded"
                     >
                       Live Demo
@@ -111,6 +118,7 @@ export function Projects() {
                     <a
                       href={p.code}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="px-3 py-1 border rounded"
                     >
                       View Code

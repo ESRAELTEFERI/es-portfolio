@@ -1,5 +1,6 @@
 import React from "react";
 import { motion as Motion } from "framer-motion";
+import foodDelivery from "../assets/foodDelivery.png";
 
 const projects = [
   {
@@ -25,7 +26,7 @@ const projects = [
     subtitle: "Frontend Project (React)",
     desc: "Built a responsive food delivery interface with modern UI patterns and component-based architecture.",
     tags: ["React", "JavaScript", "CSS"],
-    image: "/src/assets/foodDelivery.png",
+    image: { foodDelivery },
     code: "https://github.com/ESRAELTEFERI/FoodDelivery",
     demo: null,
   },

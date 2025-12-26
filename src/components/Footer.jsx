@@ -17,14 +17,14 @@ export function Footer() {
           >
             Download CV
           </a>
-          <a
+          {/* <a
             href="mailto:teferiesrael21@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="px-3 py-1 border rounded"
           >
             Email
-          </a>
+          </a> */}
           <a
             href="https://github.com/ESRAELTEFERI"
             target="_blank"
@@ -34,7 +34,7 @@ export function Footer() {
             GitHub
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/esrael-teferi-tensay-76988539b"
             target="_blank"
             rel="noopener noreferrer"
             className="px-3 py-1 border rounded"

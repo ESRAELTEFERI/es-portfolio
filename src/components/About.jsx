@@ -16,19 +16,28 @@ export function About() {
       <div className="grid md:grid-cols-3 gap-6 items-start">
         <div className="col-span-2">
           <p className="mb-4">
-            I'm from Mekelle, Ethiopia and graduated with a BSc in Computer
-            Science & Engineering (June 18, 2025). I enjoy building web
-            applications and exploring AI solutions — focusing on clean code,
-            usability, and real impact.
+            I’m a software engineer from Mekelle, Ethiopia, with a BSc in
+            Computer Science & Engineering (June 18, 2025). I have hands-on
+            experience building real-world web applications using React and
+            Angular, from responsive user interfaces to API integration and
+            application logic.
+          </p>
+
+          <p className="mb-4">
+            I enjoy turning designs and ideas into clean, usable products, and I
+            care deeply about code quality, maintainability, and user
+            experience. Alongside frontend development, I’ve worked on
+            full-stack and AI-related projects, which helps me understand
+            systems beyond the UI layer.
           </p>
 
           <div className="flex gap-6 mt-6">
             <div>
-              <div className="text-3xl font-bold">1+</div>
+              <div className="text-3xl font-bold">5+</div>
               <div className="text-sm text-muted">Years Experience</div>
             </div>
             <div>
-              <div className="text-3xl font-bold">5+</div>
+              <div className="text-3xl font-bold">10+</div>
               <div className="text-sm text-muted">Projects Completed</div>
             </div>
           </div>

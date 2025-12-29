@@ -2,7 +2,7 @@ import React from "react";
 import { motion as Motion } from "framer-motion";
 
 // Import all images
-import sheeqlee from "../assets/sheeqlee.png";
+import sheeqlee from "../assets/Sheeqlee.png";
 import hrms from "../assets/hrms.jpg";
 import foodDelivery from "../assets/foodDelivery.png";
 import tickTock from "../assets/TickTock.png";

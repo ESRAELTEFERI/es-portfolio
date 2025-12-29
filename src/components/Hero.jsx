@@ -1,5 +1,6 @@
 import React from "react";
 import { motion as Motion } from "framer-motion";
+import esraelPhoto from "../assets/esrael_photo.jpg";
 
 const container = {
   visible: { transition: { staggerChildren: 0.12 } },
@@ -44,8 +45,6 @@ export function Hero() {
           </a>
           <a
             href="Esrael_teferi_Resume.pdf"
-            // target="_blank"
-            // rel="noopener noreferrer"
             download
             className="px-4 py-2 rounded-lg border"
           >
@@ -66,7 +65,7 @@ export function Hero() {
           style={{ background: "var(--color-card)" }}
         >
           <img
-            src="/src/assets/esrael_photo.jpg"
+            src={esraelPhoto}
             alt="Esrael"
             className="object-cover w-full h-full"
           />
